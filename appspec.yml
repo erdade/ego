@@ -24,9 +24,7 @@ os: linux
 #   may cause associated deployments to fail.
 files:
   - source: /
-    destination:/egoheart
-  - source:
-    destination:
+    destination: /egoheart
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
 #   you can specify a "permissions" 
 #   section here that describes special permissions to apply to the files 
@@ -38,12 +36,12 @@ files:
 #   "permissions" section altogether. A blank or incomplete "permissions"
 #   section may cause associated deployments to fail.
 permissions:
-  - object:
+  - object: /egoheart
     pattern:
     except:
     owner:
     group:
-    mode: 
+    mode: 464
     acls:
       -
     context:
@@ -51,7 +49,7 @@ permissions:
       type:
       range:
     type:
-      -
+      - file
 # If you are not running any commands on the Amazon EC2 instance, then remove 
 #   the "hooks" section altogether. A blank or incomplete "hooks" section
 #   may cause associated deployments to fail.
