@@ -1,0 +1,12 @@
+{
+  "name": "hello",
+  "version": "0.0.0",
+  "author": "v",
+  "private": true,
+  "scripts": {
+    "start": "node example.js",
+    "pm2": "pm2 start processes.json"
+  },
+  "dependencies": {
+  }
+}
