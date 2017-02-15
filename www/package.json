@@ -1,5 +1,0 @@
-"scripts": {
-    "start": "pm2 ./bin/www",
-    "debug": "node debug ./bin/www",
-    "pm2":"pm2 start processes.json"
-},
