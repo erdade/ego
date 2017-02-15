@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /www
-    destination: /var/www/
+  - source: www
+    destination: /webapps/www/
 hooks:
   BeforeInstall:
     - location: scripts/start_server
